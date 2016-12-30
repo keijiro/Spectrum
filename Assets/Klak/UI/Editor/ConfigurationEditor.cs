@@ -1,5 +1,5 @@
 //
-// Klak - Utilities for creative coding with Unity
+// KlakUI - Custom UI controls for Klak
 //
 // Copyright (C) 2016 Keijiro Takahashi
 //
@@ -21,13 +21,32 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 //
-using UnityEngine;
 using UnityEditor;
+using UnityEngine;
 
-namespace Klak.Wiring
+namespace Klak.UI
 {
-    [CustomEditor(typeof(FloatOut))]
-    public class FloatOutEditor : GenericOutEditor<float>
+    [CustomEditor(typeof(Configuration))]
+    [CanEditMultipleObjects]
+    public class ConfigurationEditor : Editor
     {
+        SerializedProperty _knobSensitivity;
+
+        void OnEnable()
+        {
+            _knobSensitivity = serializedObject.FindProperty("_knobSensitivity");
+        }
+
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+            EditorGUILayout.Space();
+
+            serializedObject.Update();
+
+            EditorGUILayout.PropertyField(_knobSensitivity);
+
+            serializedObject.ApplyModifiedProperties();
+        }
     }
 }

@@ -23,11 +23,37 @@
 //
 using UnityEngine;
 using UnityEditor;
+using Graphs = UnityEditor.Graphs;
 
-namespace Klak.Wiring
+namespace Klak.Wiring.Patcher
 {
-    [CustomEditor(typeof(FloatOut))]
-    public class FloatOutEditor : GenericOutEditor<float>
+    // Custom editor styles
+    public static class Styles
     {
+        static GUIStyle _pinIn;
+
+        public static GUIStyle pinIn
+        {
+            get {
+                if (_pinIn == null) {
+                    _pinIn = new GUIStyle(Graphs.Styles.triggerPinIn);
+                    _pinIn.stretchWidth = false;
+                }
+                return _pinIn;
+            }
+        }
+
+        static GUIStyle _pinOut;
+
+        public static GUIStyle pinOut
+        {
+            get {
+                if (_pinOut == null) {
+                    _pinOut = new GUIStyle(Graphs.Styles.triggerPinOut);
+                    _pinOut.stretchWidth = false;
+                }
+                return _pinOut;
+            }
+        }
     }
 }

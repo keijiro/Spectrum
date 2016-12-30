@@ -1,5 +1,5 @@
 //
-// Klak - Utilities for creative coding with Unity
+// KlakUI - Custom UI controls for Klak
 //
 // Copyright (C) 2016 Keijiro Takahashi
 //
@@ -22,26 +22,59 @@
 // THE SOFTWARE.
 //
 using UnityEngine;
-using UnityEditor;
+using Klak.Math;
 
 namespace Klak.Wiring
 {
-    [CanEditMultipleObjects]
-    [CustomEditor(typeof(Patch))]
-    public class PatchEditor : Editor
+    [AddComponentMenu("Klak/Wiring/Input/UI/Knob")]
+    public class UIKnobInput : NodeBase
     {
-        [MenuItem("GameObject/Klak/Patch", false, 10)]
-        static void CreatePatch()
+        #region Editable properties
+
+        [SerializeField]
+        FloatInterpolator.Config _interpolator = FloatInterpolator.Config.Quick;
+
+        #endregion
+
+        #region Public methods
+
+        FloatInterpolator _outputValue;
+        bool _initialized;
+
+        public void ChangeValue(float value)
         {
-            var go = new GameObject("Patch");
-            go.AddComponent<Patch>();
-            Selection.activeGameObject = go;
+            if (_interpolator.enabled)
+            {
+                if (!_initialized)
+                {
+                    _outputValue = new FloatInterpolator(value, _interpolator);
+                    _initialized = true;
+                }
+                _outputValue.targetValue = value;
+            }
+            else
+            {
+                _valueEvent.Invoke(value);
+            }
         }
 
-        public override void OnInspectorGUI()
+        #endregion
+
+        #region Node I/O
+
+        [SerializeField, Outlet]
+        FloatEvent _valueEvent = new FloatEvent();
+
+        #endregion
+
+        #region MonoBehaviour functions
+
+        void Update()
         {
-            if (GUILayout.Button("Open Patcher", "LargeButton"))
-                Patcher.PatcherWindow.OpenPatch((Patch)target);
+            if (_interpolator.enabled && _initialized)
+                _valueEvent.Invoke(_outputValue.Step());
         }
+
+        #endregion
     }
 }

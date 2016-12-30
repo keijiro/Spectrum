@@ -1,5 +1,5 @@
 //
-// Klak - Utilities for creative coding with Unity
+// KlakUI - Custom UI controls for Klak
 //
 // Copyright (C) 2016 Keijiro Takahashi
 //
@@ -22,12 +22,30 @@
 // THE SOFTWARE.
 //
 using UnityEngine;
-using UnityEditor;
+using Klak.Math;
 
 namespace Klak.Wiring
 {
-    [CustomEditor(typeof(FloatOut))]
-    public class FloatOutEditor : GenericOutEditor<float>
+    [AddComponentMenu("Klak/Wiring/Input/UI/Toggle")]
+    public class UIToggleInput : NodeBase
     {
+        #region Public methods
+
+        public void ChangeValue(bool value)
+        {
+            (value ? _onEvent : _offEvent).Invoke();
+        }
+
+        #endregion
+
+        #region Node I/O
+
+        [SerializeField, Outlet]
+        VoidEvent _onEvent = new VoidEvent();
+
+        [SerializeField, Outlet]
+        VoidEvent _offEvent = new VoidEvent();
+
+        #endregion
     }
 }

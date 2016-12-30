@@ -23,11 +23,30 @@
 //
 using UnityEngine;
 using UnityEditor;
+using System.Reflection;
+using System;
 
-namespace Klak.Wiring
+namespace Klak.Wiring.Patcher
 {
-    [CustomEditor(typeof(FloatOut))]
-    public class FloatOutEditor : GenericOutEditor<float>
+    public static class GUIUtility
     {
+        // Clears the property drawer cache to avoid the
+        // "SerializedObject of SerializedProperty has been Disposed" error.
+        public static void ClearPropertyDrawerCache()
+        {
+            // Call internal function ScriptAttributeUtility.ClearGlobalCache.
+            var t = Type.GetType("UnityEditor.ScriptAttributeUtility,UnityEditor");
+            var m = t.GetMethod("ClearGlobalCache", BindingFlags.NonPublic | BindingFlags.Static);
+            m.Invoke(null, null);
+        }
+
+        // Sends repaint request to all inspectors.
+        public static void RepaintAllInspectors()
+        {
+            // Call internal function InspectorWindow.RepaintAllInspectors.
+            var t = Type.GetType("UnityEditor.InspectorWindow,UnityEditor");
+            var m = t.GetMethod("RepaintAllInspectors", BindingFlags.NonPublic | BindingFlags.Static);
+            m.Invoke(null, null);
+        }
     }
 }

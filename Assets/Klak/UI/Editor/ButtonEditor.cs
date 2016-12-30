@@ -1,5 +1,5 @@
-//
-// Klak - Utilities for creative coding with Unity
+﻿//
+// KlakUI - Custom UI controls for Klak
 //
 // Copyright (C) 2016 Keijiro Takahashi
 //
@@ -21,13 +21,34 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 //
-using UnityEngine;
 using UnityEditor;
+using UnityEditor.UI;
+using UnityEngine;
 
-namespace Klak.Wiring
+namespace Klak.UI
 {
-    [CustomEditor(typeof(FloatOut))]
-    public class FloatOutEditor : GenericOutEditor<float>
+    [CustomEditor(typeof(Button))]
+    [CanEditMultipleObjects]
+    public class ButtonEditor : SelectableEditor
     {
+        SerializedProperty _target;
+
+        protected override void OnEnable()
+        {
+            base.OnEnable();
+            _target = serializedObject.FindProperty("_target");
+        }
+
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+            EditorGUILayout.Space();
+
+            serializedObject.Update();
+
+            EditorGUILayout.PropertyField(_target);
+
+            serializedObject.ApplyModifiedProperties();
+        }
     }
 }
