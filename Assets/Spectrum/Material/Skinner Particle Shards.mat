@@ -150,7 +150,7 @@ Material:
       second: 1
     - first:
         name: _HueRandomness
-      second: 0.112
+      second: 0.145
     - first:
         name: _HueShift
       second: -0.53
