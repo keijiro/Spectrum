@@ -99,7 +99,7 @@ Material:
       second: 1
     - first:
         name: _ColorMode
-      second: 0
+      second: 1
     - first:
         name: _Cutoff
       second: 0.5
@@ -132,7 +132,7 @@ Material:
       second: 0.02
     - first:
         name: _Smoothness
-      second: 0.814
+      second: 0.4
     - first:
         name: _SmoothnessTextureChannel
       second: 0
@@ -154,10 +154,10 @@ Material:
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _Color1
-      second: {r: 1, g: 0.051470578, b: 0.051470578, a: 1}
+      second: {r: 0.7058823, g: 0.11937714, b: 0.11937714, a: 1}
     - first:
         name: _Color2
-      second: {r: 1, g: 0.6008113, b: 0.29411763, a: 1}
+      second: {r: 0.6102941, g: 0.06282438, b: 0.2780367, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}

@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Wig
-  m_Shader: {fileID: 4800000, guid: 5976ea646a28dd34ca270c7f10efbbed, type: 3}
+  m_Name: Floor
+  m_Shader: {fileID: 4800000, guid: 1fd32cd757c521c478d2c4b0c14ac75f, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -15,12 +15,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
-    - first:
-        name: _BasisBuffer
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - first:
         name: _BumpMap
       second:
@@ -49,13 +43,13 @@ Material:
         name: _EmissionMap
       second:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 894e75e3ee7143f44b19017f0346cef2, type: 3}
+        m_Scale: {x: 3, y: 3}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MetallicGlossMap
@@ -75,16 +69,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _PositionBuffer
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - first:
-        name: _BaseRandom
-      second: 0.13
     - first:
         name: _BumpScale
       second: 1
@@ -98,26 +83,20 @@ Material:
         name: _DstBlend
       second: 0
     - first:
+        name: _Frequency
+      second: 0.23
+    - first:
         name: _GlossMapScale
-      second: 1
+      second: 0.738
     - first:
         name: _Glossiness
-      second: 0.5
+      second: 0.778
     - first:
         name: _GlossyReflections
       second: 1
     - first:
-        name: _GlowIntensity
-      second: 2.3
-    - first:
-        name: _GlowProb
-      second: 0
-    - first:
-        name: _GlowRandom
-      second: 0
-    - first:
         name: _Metallic
-      second: 0
+      second: 1
     - first:
         name: _Mode
       second: 0
@@ -128,8 +107,11 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
+        name: _Repeat
+      second: 2
+    - first:
         name: _Smoothness
-      second: 0.5
+      second: 0.8
     - first:
         name: _SmoothnessTextureChannel
       second: 0
@@ -137,14 +119,11 @@ Material:
         name: _SpecularHighlights
       second: 1
     - first:
-        name: _SrcBlend
+        name: _Speed
       second: 1
     - first:
-        name: _ThickRandom
-      second: 0.5
-    - first:
-        name: _Thickness
-      second: 0.012
+        name: _SrcBlend
+      second: 1
     - first:
         name: _UVSec
       second: 0
@@ -153,14 +132,11 @@ Material:
       second: 1
     m_Colors:
     - first:
-        name: _BaseColor
-      second: {r: 0.6691177, g: 0.21155927, b: 0.21155927, a: 1}
-    - first:
         name: _Color
-      second: {r: 1, g: 1, b: 1, a: 1}
+      second: {r: 0.85294116, g: 0.85294116, b: 0.85294116, a: 1}
     - first:
         name: _EmissionColor
-      second: {r: 0, g: 0, b: 0, a: 1}
+      second: {r: 1, g: 1, b: 1, a: 1}
     - first:
-        name: _GlowColor
-      second: {r: 1, g: 0.27205884, b: 0.27205884, a: 1}
+        name: _Origin
+      second: {r: 0, g: 0, b: 0, a: 0}
