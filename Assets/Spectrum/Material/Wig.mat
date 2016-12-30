@@ -144,7 +144,7 @@ Material:
       second: 0.5
     - first:
         name: _Thickness
-      second: 0.014
+      second: 0.0088
     - first:
         name: _UVSec
       second: 0
