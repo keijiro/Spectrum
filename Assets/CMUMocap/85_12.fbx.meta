@@ -179,7 +179,7 @@ ModelImporter:
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
-      loopBlendPositionY: 0
+      loopBlendPositionY: 1
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
@@ -192,135 +192,49 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Body
-        weight: 0
-      - path: Character_Ctrl:Reference
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:ChestEndEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:ChestOriginEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:HeadEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:LeftUpLeg
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:LeftUpLeg/Character_Ctrl:LeftLeg
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:LeftUpLeg/Character_Ctrl:LeftLeg/Character_Ctrl:LeftFoot
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:LeftUpLeg/Character_Ctrl:LeftLeg/Character_Ctrl:LeftFoot/Character_Ctrl:LeftToeBase
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:RightUpLeg
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:RightUpLeg/Character_Ctrl:RightLeg
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:RightUpLeg/Character_Ctrl:RightLeg/Character_Ctrl:RightFoot
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:RightUpLeg/Character_Ctrl:RightLeg/Character_Ctrl:RightFoot/Character_Ctrl:RightToeBase
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:Spine
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:Spine/Character_Ctrl:Spine1
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:Spine/Character_Ctrl:Spine1/Character_Ctrl:Spine2
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:Spine/Character_Ctrl:Spine1/Character_Ctrl:Spine2/Character_Ctrl:LeftShoulder
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:Spine/Character_Ctrl:Spine1/Character_Ctrl:Spine2/Character_Ctrl:LeftShoulder/Character_Ctrl:LeftArm
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:Spine/Character_Ctrl:Spine1/Character_Ctrl:Spine2/Character_Ctrl:LeftShoulder/Character_Ctrl:LeftArm/Character_Ctrl:LeftForeArm
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:Spine/Character_Ctrl:Spine1/Character_Ctrl:Spine2/Character_Ctrl:LeftShoulder/Character_Ctrl:LeftArm/Character_Ctrl:LeftForeArm/Character_Ctrl:LeftHand
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:Spine/Character_Ctrl:Spine1/Character_Ctrl:Spine2/Character_Ctrl:Neck
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:Spine/Character_Ctrl:Spine1/Character_Ctrl:Spine2/Character_Ctrl:Neck/Character_Ctrl:Head
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:Spine/Character_Ctrl:Spine1/Character_Ctrl:Spine2/Character_Ctrl:RightShoulder
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:Spine/Character_Ctrl:Spine1/Character_Ctrl:Spine2/Character_Ctrl:RightShoulder/Character_Ctrl:RightArm
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:Spine/Character_Ctrl:Spine1/Character_Ctrl:Spine2/Character_Ctrl:RightShoulder/Character_Ctrl:RightArm/Character_Ctrl:RightForeArm
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:Hips/Character_Ctrl:Spine/Character_Ctrl:Spine1/Character_Ctrl:Spine2/Character_Ctrl:RightShoulder/Character_Ctrl:RightArm/Character_Ctrl:RightForeArm/Character_Ctrl:RightHand
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:HipsEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:LeftAnkleEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:LeftElbowEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:LeftFootEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:LeftHipEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:LeftKneeEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:LeftShoulderEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:LeftWristEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:RightAnkleEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:RightElbowEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:RightFootEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:RightHipEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:RightKneeEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:RightShoulderEffector
-        weight: 0
-      - path: Character_Ctrl:Reference/Character_Ctrl:RightWristEffector
-        weight: 0
-      - path: Neo_Reference
+      - path: Neo_Hips
         weight: 1
-      - path: Neo_Reference/Neo_Hips
+      - path: Neo_Hips/Neo_LeftUpLeg
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_LeftUpLeg
+      - path: Neo_Hips/Neo_LeftUpLeg/Neo_LeftLeg
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_LeftUpLeg/Neo_LeftLeg
+      - path: Neo_Hips/Neo_LeftUpLeg/Neo_LeftLeg/Neo_LeftFoot
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_LeftUpLeg/Neo_LeftLeg/Neo_LeftFoot
+      - path: Neo_Hips/Neo_LeftUpLeg/Neo_LeftLeg/Neo_LeftFoot/Neo_LeftToeBase
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_LeftUpLeg/Neo_LeftLeg/Neo_LeftFoot/Neo_LeftToeBase
+      - path: Neo_Hips/Neo_RightUpLeg
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_RightUpLeg
+      - path: Neo_Hips/Neo_RightUpLeg/Neo_RightLeg
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_RightUpLeg/Neo_RightLeg
+      - path: Neo_Hips/Neo_RightUpLeg/Neo_RightLeg/Neo_RightFoot
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_RightUpLeg/Neo_RightLeg/Neo_RightFoot
+      - path: Neo_Hips/Neo_RightUpLeg/Neo_RightLeg/Neo_RightFoot/Neo_RightToeBase
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_RightUpLeg/Neo_RightLeg/Neo_RightFoot/Neo_RightToeBase
+      - path: Neo_Hips/Neo_Spine
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_Spine
+      - path: Neo_Hips/Neo_Spine/Neo_Spine1
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1
+      - path: Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2
+      - path: Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_LeftShoulder
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_LeftShoulder
+      - path: Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_LeftShoulder/Neo_LeftArm
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_LeftShoulder/Neo_LeftArm
+      - path: Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_LeftShoulder/Neo_LeftArm/Neo_LeftForeArm
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_LeftShoulder/Neo_LeftArm/Neo_LeftForeArm
+      - path: Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_LeftShoulder/Neo_LeftArm/Neo_LeftForeArm/Neo_LeftHand
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_LeftShoulder/Neo_LeftArm/Neo_LeftForeArm/Neo_LeftHand
+      - path: Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_Neck
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_Neck
+      - path: Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_Neck/Neo_Head
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_Neck/Neo_Head
+      - path: Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_RightShoulder
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_RightShoulder
+      - path: Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_RightShoulder/Neo_RightArm
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_RightShoulder/Neo_RightArm
+      - path: Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_RightShoulder/Neo_RightArm/Neo_RightForeArm
         weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_RightShoulder/Neo_RightArm/Neo_RightForeArm
-        weight: 1
-      - path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_RightShoulder/Neo_RightArm/Neo_RightForeArm/Neo_RightHand
+      - path: Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_RightShoulder/Neo_RightArm/Neo_RightForeArm/Neo_RightHand
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}

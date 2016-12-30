@@ -2154,6 +2154,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1288604073}
+        m_MethodName: set_rotation
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: Klak.Wiring.NodeBase+QuaternionEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &66141314
@@ -10030,7 +10041,7 @@ MonoBehaviour:
   _enablePositionNoise: 0
   _enableRotationNoise: 1
   _positionFrequency: 0.2
-  _rotationFrequency: 0.05
+  _rotationFrequency: 0.035
   _positionAmplitude: 0.5
   _rotationAmplitude: 1
   _positionScale: {x: 1, y: 1, z: 1}
@@ -22385,8 +22396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4aca5806d89554ea1754d3f877fd59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: 1452, y: 564}
-  _targetTransform: {fileID: 0}
+  _wiringNodePosition: {x: 1464, y: 528}
+  _targetTransform: {fileID: 20430307}
   _addToOriginal: 0
 --- !u!4 &1218142895
 Transform:
@@ -23884,6 +23895,49 @@ MonoBehaviour:
   _positionRange: {x: 0, y: 0, z: 0}
   _rotationRange: {x: 7, y: 0, z: 40}
   _amplitude: 1
+--- !u!1 &1288604071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1288604072}
+  - 114: {fileID: 1288604073}
+  m_Layer: 0
+  m_Name: Zero Out
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1288604072
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288604071}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1646384021}
+  m_RootOrder: 39
+--- !u!114 &1288604073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288604071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4aca5806d89554ea1754d3f877fd59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wiringNodePosition: {x: 1464, y: 612}
+  _targetTransform: {fileID: 1035619803}
+  _addToOriginal: 0
 --- !u!1 &1289185571
 GameObject:
   m_ObjectHideFlags: 0
@@ -29894,7 +29948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enablePositionNoise: 1
   _enableRotationNoise: 0
-  _positionFrequency: 0.15
+  _positionFrequency: 0.1
   _rotationFrequency: 0.14
   _positionAmplitude: 1
   _rotationAmplitude: 3
@@ -31188,6 +31242,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1288604073}
+        m_MethodName: set_position
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: Klak.Wiring.NodeBase+Vector3Event, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1625852829
@@ -31910,6 +31975,7 @@ Transform:
   - {fileID: 531863337}
   - {fileID: 1090470001}
   - {fileID: 544609171}
+  - {fileID: 1288604072}
   m_Father: {fileID: 1683323795}
   m_RootOrder: 5
 --- !u!114 &1646384022

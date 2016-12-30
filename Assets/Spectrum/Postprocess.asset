@@ -38,12 +38,12 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 2.29
-      radius: 0.3
+      intensity: 0.88
+      radius: 0.67
       sampleCount: 10
-      downsampling: 0
+      downsampling: 1
       forceForwardCompatibility: 0
-      ambientOnly: 1
+      ambientOnly: 0
       highPrecision: 0
   screenSpaceReflection:
     m_Enabled: 1
@@ -65,7 +65,7 @@ MonoBehaviour:
       screenEdgeMask:
         intensity: 0.03
   depthOfField:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       focusDistance: 4.63
       aperture: 1.9
@@ -76,7 +76,7 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       shutterAngle: 360
-      sampleCount: 10
+      sampleCount: 8
       frameBlending: 0
   eyeAdaptation:
     m_Enabled: 0
@@ -95,9 +95,9 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 1
+        intensity: 0.85
         threshold: 1.2
-        softKnee: 0
+        softKnee: 0.15
         radius: 7
         antiFlicker: 0
       lensDirt:
@@ -115,11 +115,11 @@ MonoBehaviour:
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
-        postExposure: 0.8
-        temperature: 0
+        postExposure: 1.2
+        temperature: 8
         tint: 0
         hueShift: 0
-        saturation: 1.1
+        saturation: 1
         contrast: 1
       channelMixer:
         red: {x: 1, y: 0, z: 0}
@@ -129,9 +129,9 @@ MonoBehaviour:
       colorWheels:
         mode: 1
         log:
-          slope: {r: 1, g: 1, b: 1, a: 0}
-          power: {r: 1, g: 1, b: 1, a: 0}
-          offset: {r: 1, g: 1, b: 1, a: 0}
+          slope: {r: 1, g: 0.9311194, b: 0.88531846, a: 0}
+          power: {r: 0.8597858, g: 1, b: 0.90270656, a: 0}
+          offset: {r: 0.9526265, g: 0.8829776, b: 1, a: 0}
         linear:
           lift: {r: 0, g: 0, b: 0, a: 0}
           gamma: {r: 0, g: 0, b: 0, a: 0}
@@ -143,13 +143,13 @@ MonoBehaviour:
             m_Curve:
             - time: 0
               value: 0
-              inSlope: 1.7685406
-              outSlope: 1.7685406
+              inSlope: 0
+              outSlope: 1.3749999
               tangentMode: 0
-            - time: 0.96153843
+            - time: 1
               value: 1
-              inSlope: 1.2141966
-              outSlope: 1.2141966
+              inSlope: 1
+              outSlope: 0
               tangentMode: 0
             m_PreInfinity: 2
             m_PostInfinity: 2
@@ -271,12 +271,12 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       spectralTexture: {fileID: 0}
-      intensity: 0.411
+      intensity: 0.387
   grain:
     m_Enabled: 1
     m_Settings:
       colored: 1
-      intensity: 0.707
+      intensity: 0.377
       size: 1
       luminanceContribution: 0.8
   vignette:
@@ -285,8 +285,8 @@ MonoBehaviour:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
       center: {x: 0.5, y: 0.5}
-      intensity: 0.433
-      smoothness: 0.2
+      intensity: 0.323
+      smoothness: 0.472
       roundness: 1
       mask: {fileID: 0}
       opacity: 1
