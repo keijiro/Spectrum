@@ -16,18 +16,22 @@ namespace UnityEngine.PostProcessing.Utilities
 
         public bool controlAmbientOcclusion;
         public bool enableAmbientOcclusion;
+        public bool EnableAmbientOcclusion { set { enableAmbientOcclusion = value; } }
         public AmbientOcclusionModel.Settings ambientOcclusion;
 
         public bool controlScreenSpaceReflection;
         public bool enableScreenSpaceReflection;
+        public bool EnableScreenSpaceReflection { set { enableScreenSpaceReflection = value; } }
         public ScreenSpaceReflectionModel.Settings screenSpaceReflection;
 
         public bool controlDepthOfField = true;
         public bool enableDepthOfField;
+        public bool EnableDepthOfField { set { enableDepthOfField = value; } }
         public DepthOfFieldModel.Settings depthOfField;
 
         public bool controlMotionBlur;
         public bool enableMotionBlur;
+        public bool EnableMotionBlur { set { enableMotionBlur = value; } }
         public MotionBlurModel.Settings motionBlur;
 
         public bool controlEyeAdaptation;
@@ -36,6 +40,7 @@ namespace UnityEngine.PostProcessing.Utilities
 
         public bool controlBloom;
         public bool enableBloom;
+        public bool EnableBloom { set { enableBloom = value; } }
         public BloomModel.Settings bloom;
 
         public bool controlColorGrading;
@@ -56,6 +61,7 @@ namespace UnityEngine.PostProcessing.Utilities
 
         public bool controlVignette;
         public bool enableVignette;
+        public bool EnableVignette { set { enableVignette = value; } }
         public VignetteModel.Settings vignette;
 
         #endregion
