@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Chimera
+namespace Spectrum
 {
     public class LightColorChanger : MonoBehaviour
     {

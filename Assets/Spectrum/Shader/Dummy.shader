@@ -1,4 +1,4 @@
-﻿Shader "Test/Dummy"
+﻿Shader "Spectrum/Dummy"
 {
     Properties
     {

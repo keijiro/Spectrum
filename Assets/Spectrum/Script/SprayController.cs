@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Chimera
+namespace Spectrum
 {
     [RequireComponent(typeof(Kvant.SprayMV))]
     public class SprayController : MonoBehaviour

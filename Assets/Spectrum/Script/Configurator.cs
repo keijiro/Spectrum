@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Phantom
+namespace Spectrum
 {
     public class Configurator : MonoBehaviour
     {

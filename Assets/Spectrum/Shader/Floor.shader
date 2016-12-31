@@ -1,4 +1,4 @@
-﻿Shader "Custom/Floor"
+﻿Shader "Spectrum/Floor"
 {
     Properties
     {

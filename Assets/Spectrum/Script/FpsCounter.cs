@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace Mirage
+namespace Spectrum
 {
     public class FpsCounter : MonoBehaviour
     {
