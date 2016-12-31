@@ -18,12 +18,12 @@ MonoBehaviour:
       depth:
         scale: 1
       motionVectors:
-        sourceOpacity: 1
-        motionImageOpacity: 0
-        motionImageAmplitude: 100
+        sourceOpacity: 0
+        motionImageOpacity: 1
+        motionImageAmplitude: 40
         motionVectorsOpacity: 1
-        motionVectorsResolution: 24
-        motionVectorsAmplitude: 100
+        motionVectorsResolution: 32
+        motionVectorsAmplitude: 40
   antialiasing:
     m_Enabled: 0
     m_Settings:
@@ -50,7 +50,7 @@ MonoBehaviour:
     m_Settings:
       reflection:
         blendType: 0
-        reflectionQuality: 2
+        reflectionQuality: 0
         maxDistance: 100
         iterationCount: 256
         stepSize: 3
@@ -76,7 +76,7 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       shutterAngle: 360
-      sampleCount: 8
+      sampleCount: 12
       frameBlending: 0
   eyeAdaptation:
     m_Enabled: 0
